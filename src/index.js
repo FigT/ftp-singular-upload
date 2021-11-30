@@ -13,8 +13,6 @@ try {
 
     uploadFile(host, port, user, pass, file, remotePath, secure).then((r => {
         core.setOutput('response', r.message);
-
-        console.log("GH Event Payload: " + JSON.stringify(github.context.payload));
     })).catch(e => {
         core.setFailed(e.message);
     });

@@ -11,6 +11,7 @@ inputs:
   port:
     description: "the port of the FTP server - default value is 21"
     required: false
+    default: "21"
   user:
     description: "the username to use for connecting to the FTP server"
     required: true
@@ -26,6 +27,7 @@ inputs:
   secure:
     description: "whether to use FTP or FTPS - default value is false"
     required: false
+    default: "false"
 outputs:
   response:
     description: "FTP response message including the status code"
