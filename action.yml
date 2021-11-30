@@ -1,0 +1,34 @@
+name: "ftp-singular-upload"
+description: "Upload a singular file to a FTP server"
+author: "FigT"
+branding:
+  icon: "file-plus"
+  color: "purple"
+inputs:
+  host:
+    description: "the hostname of the FTP server"
+    required: true
+  port:
+    description: "the port of the FTP server - default value is 21"
+    required: false
+  user:
+    description: "the username to use for connecting to the FTP server"
+    required: true
+  pass:
+    description: "the password to use for connecting to the FTP server"
+    required: true
+  file:
+    description: "the path of the file to upload"
+    required: true
+  remotePath:
+    description: "the path on the server to upload the file to"
+    required: true
+  secure:
+    description: "whether to use FTP or FTPS - default value is false"
+    required: false
+outputs:
+  response:
+    description: "FTP response message including the status code"
+runs:
+  using: "node12"
+  main: "dist/index.js"

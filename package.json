@@ -1,0 +1,17 @@
+{
+  "name": "ftp-singular-upload",
+  "version": "1.0.0",
+  "description": "A GitHub Action that uploads a single file to an FTP server",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "FigT",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "basic-ftp": "^4.6.6"
+  }
+}
